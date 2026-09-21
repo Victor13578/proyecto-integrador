@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card h3,
+.card p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
